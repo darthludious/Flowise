@@ -262,7 +262,7 @@ export const additionalCallbacks = async (nodeData: INodeData, options: ICommonO
                         apiUrl: llmonitorEndpoint ?? 'https://app.llmonitor.com'
                     }
 
-                    const handler = new LLMonitorHandler(llmonitorFields)
+                    const handler = new LLMonitorHandler(llmonitorFields as ConstructorParams);
                     callbacks.push(handler)
                 }
             }
